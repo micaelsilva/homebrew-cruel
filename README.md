@@ -1,4 +1,4 @@
-# Micaelsilva Cruel
+# Homebrew alternative repository
 
 ## How do I install these formulae?
 `brew install micaelsilva/cruel/<formula>`
