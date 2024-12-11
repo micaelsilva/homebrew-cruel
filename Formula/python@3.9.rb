@@ -109,8 +109,10 @@ class PythonAT39 < Formula
       --enable-ipv6
       --datarootdir=#{share}
       --datadir=#{share}
+      --enable-framework=#{frameworks}
       --enable-loadable-sqlite-extensions
       --without-ensurepip
+      --with-dtrace
       --with-openssl=#{Formula["openssl@1.1"].opt_prefix}
       --with-dbmliborder=gdbm:ndbm
       --with-lto
@@ -118,8 +120,6 @@ class PythonAT39 < Formula
       --with-system-libmpdec
     ]
 
-    args << "--enable-framework=#{frameworks}"
-    args << "--with-dtrace"
     args << "LLVM_AR=/usr/bin/ar"
 
     # Python re-uses flags when building native modules.
